@@ -94,11 +94,23 @@ eMBB targets high data rate transmission with high requirements for bandwidth su
 
 mMTC aims to support a large number of low-power devices for a long life-time requiring highly energy efficient communication. They demand the improvements of latency, reliability, massive connection density and energy efficiency. 
  
-URLLC is for devices requiring low latency and high link reliability such as autonomous vehicle, remote surgery in medical field and industrial autonomation. They are real time applications that require the immediate actions so time requirement is very strict being in the order of ten-hundreds of microseconds. 
+URLLC is for devices requiring low latency and high link reliability. There are a huge number of URLLC applications including:
+\begin{itemize}
+    \item Smart grid: an electrical grid with smart meter that transmit electricity consumption from the clients to the providers in real time.
+    \item Self-driving car: a car operates without the control from human being. It has the ability to detect the obstacles and make a decision to avoid them.
+    \item Industrial automation: the factory is operated by the autonomous machines and robots to manufacture the products.
+    \item Health care: remote surgery can be carried out by a surgeon in a different place with the help of robot that receives the instructions in real time.
+    \item Augmented reality: the environment in real world is recreated by the computers with the support of audio, video and geographic information
+    \item V2X: a network supports the communication among vehicles and other objects
+    \item Tactile Internet: a network ensures the tactile sensing 
+\end{itemize}
+
+They are real time applications that require the immediate actions so time requirement is very strict being in the order of ten-hundreds of microseconds. 
 
 Among these three service categories, URLLC raises the most challenge because it has to deal with two requirements that have trade-off: reliability and latency. Basically, one of two factors must be sacrificed to attain the other factor. 
 
 In \cite{ad1}, The 3rd Generation Partnership Project (3GPP) defines targets for the URLLC scenario: ``A general URLLC reliability requirement for one transmission of a packet is 10\textsuperscript{-5} for 32 bytes with a user plane latency of 1 ms''. The next release of 3GPP will have higher requirements of URLLC: ``Higher reliability (up to 10\textsuperscript{-6}), higher availability, short latency in the order of 0.5 to 1 ms, depending on the use cases (factory automation, transport industry and electrical power distribution)''\cite{ad2}.
+
 
 \section{Techniques standardized by 3GPP in URLLC design}
 
@@ -670,6 +682,8 @@ I completed the following courses:
 \bibitem{ad20} Sony, ``Discussion on enhanced UL grant-free transmissions'', 3GPP R1-1812746, RAN1\#95, Spokane, USA, November 12--16, 2018.
 \bibitem{ad23} Chairman's notes RAN1 \#96bis, Xi'an, China, April 8--12,2019.
 \bibitem{ad24} Chairman's notes RAN1 \#97, Reno, USA, May 13--17,2019.
+\bibitem{ad97} H.  Ji,  S.  Park,  J.  Yeo,  Y.  Kim,  J.  Lee,  and  B.  Shim,  “Ultra  Reliable and  Low  Latency  Communications  in  5G  Downlink:  Physical  Layer Aspects,” IEEE Wireless Commun, June 2018.
+\bibitem{ad98} G. J. Sutton, J. Zeng, R. P. Liu, W. Ni, D. N. Nguyen, B. A. Jayawickrama, X. Huang, M. Abolhasan, Z. Zhang, and E. Dutkiewicz, ‘‘Enabling technologies for ultra-reliable and low latency communications: From PHY and MAC layer perspectives,’’ IEEE Communications Surveys \& Tutorials ( Volume: 21 , Issue: 3 , third quarter 2019 ), February 2019
 \bibitem{ad21} R. breu, G. Berardinelli, T. Jacobsen, K. Pedersen and P. Mogensen, ``A Blind Retransmission Scheme for Ultra-Reliable and Low Latency Communications'', 2018 IEEE 87th Vehicular Technology Conference (VTC Spring), June 2018.
 \bibitem{ad22} Z. Zhou, R. Ratasuk, N. Mangalvedhe and A. Ghosh, ``Resource Allocation for Uplink Grant-Free Ultra-Reliable and Low Latency Communications'', 2018 IEEE 87th Vehicular Technology Conference (VTC Spring), June 2018.
 \bibitem{b9} Trung-Kien Le, Umer Salim, Florian Kaltenberger, ``Optimal reserved resources to ensure the repetitions in Ultra-Reliable Low-Latency Communication Uplink Grant-free transmission'',  2019 European Conference on Networks and Communications (EuCNC), June 2019.
